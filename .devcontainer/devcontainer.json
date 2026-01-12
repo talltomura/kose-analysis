@@ -1,0 +1,25 @@
+{
+  "name": "kose-analysis devcontainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "notebook",
+  "workspaceFolder": "/home/jovyan/work",
+
+  "remoteUser": "jovyan",
+  // Install VS Code attachments
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python"
+      }
+    }
+  },
+  // Execute once after build
+  //"postCreateCommand": "pip check",
+  //dotfiles / GitHub Codespaces compatible
+  "features": {}
+}

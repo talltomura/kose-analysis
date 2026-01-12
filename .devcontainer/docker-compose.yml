@@ -1,0 +1,13 @@
+services:
+  notebook:
+    build: .
+    container_name: kose-analysis
+
+    volumes:
+      - ../work:/home/jovyan/work
+      
+    ports:
+      - "8888:8888"
+   
+    environment:
+      JUPYTER_ENABLE_LAB: "yes"
