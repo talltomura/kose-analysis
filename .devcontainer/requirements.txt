@@ -1,7 +1,2 @@
-geopy
-streamlit
-plotly
-openpyxl
-
 #If you want use the specific version, set the version following the below:
 #streamlit==1.39.0
